@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Trello Clone</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="app">
+      <div class="boards">
+        <div class="boards__item">
+          <span contenteditable="true" class="title">START BOARD</span>
+          <div class="list">
+            <div draggable="true" class="list__item">
+              Start card<span class="delete__btn"> &#10006;</span>
+            </div>
+          </div>
+
+          <div class="form">
+            <textarea
+              class="textarea"
+              placeholder="Enter card title"
+            ></textarea>
+            <div class="buttons">
+              <button class="add__item-btn">Save</button>
+              <button class="cancel__item-btn">Cancel</button>
+            </div>
+          </div>
+          <div class="add__task-btn"><span>+</span>Add card</div>
+        </div>
+      </div>
+      <div class="board-btn">+</div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>

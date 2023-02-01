@@ -1,0 +1,165 @@
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../bg/bg.jpg") center/cover no-repeat;
+}
+
+.app {
+  display: flex;
+  overflow-y: auto;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  padding: 50px 0;
+}
+.app .boards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+.app .boards__item {
+  display: flex;
+  flex-direction: column;
+  align-self: baseline;
+  max-width: 250px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.584);
+  margin: 15px;
+  padding: 20px;
+  transition: 0.3s all ease;
+  border-radius: 3px;
+  position: relative;
+}
+.app .boards__item .delete__board-btn {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.493);
+}
+.app .boards__item .delete__board-btn:hover {
+  color: red;
+}
+.app .boards__item .title {
+  padding: 0 5px;
+  color: rgb(247, 247, 247);
+  border-bottom: 1px solid rgba(247, 247, 247, 0.58);
+  margin-bottom: 15px;
+}
+.app .boards__item .title:focus {
+  outline: 1px solid rgba(255, 255, 255, 0.76);
+}
+.app .boards__item .list {
+  min-height: 40px;
+}
+.app .boards__item .list__item {
+  background-color: #fefefe;
+  border-radius: 3px;
+  padding: 10px 20px;
+  word-wrap: break-word;
+  text-align: center;
+  margin: 4px 0;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 14px;
+  outline: none;
+  border: none;
+  position: relative;
+}
+.app .boards__item .list__item .delete__btn {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+}
+.app .boards__item .list__item .delete__btn:hover {
+  color: red;
+}
+.app .boards__item .form {
+  border-radius: 3px;
+  margin-top: auto;
+  display: none;
+}
+.app .boards__item .form .textarea {
+  resize: none;
+  height: 60px;
+  border-radius: 3px;
+  border: none;
+  background: white;
+  padding: 10px;
+  width: 100%;
+}
+.app .boards__item .form .textarea:focus {
+  outline: none;
+}
+.app .boards__item .form .buttons {
+  display: flex;
+}
+.app .boards__item .form .buttons .add__item-btn {
+  background: rgb(13, 136, 218);
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  width: 100%;
+}
+.app .boards__item .form .buttons .cancel__item-btn {
+  padding: 0 10px;
+  background: rgb(160, 17, 12);
+  border: none;
+  height: 35px;
+  cursor: pointer;
+  color: white;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  margin-left: auto;
+  flex-shrink: 0;
+}
+.app .boards__item .add__task-btn {
+  height: 30px;
+  background: rgba(155, 155, 155, 0.3);
+  border-radius: 3px;
+  margin-top: 5px;
+  display: flex;
+  cursor: pointer;
+  font-size: 12px;
+  align-items: center;
+  padding-left: 10px;
+  color: white;
+}
+.app .boards__item .add__task-btn span {
+  font-size: 20px;
+  margin-right: 10px;
+  color: white;
+}
+.app .board-btn {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(19, 139, 204, 0.916);
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  box-shadow: 0px 4px 12px rgba(132, 132, 132, 0.9058823529);
+  color: white;
+  font-size: 25px;
+}/*# sourceMappingURL=main.css.map */
